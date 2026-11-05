@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СтройМастер — Строительство и Ремонт под ключ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Прелоадер -->
+<div class="preloader">
+    <div class="loader">
+        <div class="hammer"></div>
+        <div class="block"></div>
+    </div>
+    <p>Загружаем инструменты...</p>
+</div>
+
+<!-- Курсор -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- Шапка -->
+<header class="header">
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <i class="fas fa-hard-hat"></i>
+            <span>Строй<span class="accent">Мастер</span></span>
+        </a>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Главная</a></li>
+            <li><a href="#services" class="nav-link">Услуги</a></li>
+            <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+            <li><a href="#about" class="nav-link">О нас</a></li>
+            <li><a href="#contact" class="nav-link">Контакты</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Заказать звонок</a>
+        <div class="burger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero секция -->
+<section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+        <span class="hero-badge reveal">🏆 Более 15 лет на рынке</span>
+        <h1 class="hero-title">
+            <span class="word">Строим</span>
+            <span class="word accent">будущее</span>
+            <span class="word">вместе</span>
+        </h1>
+        <p class="hero-subtitle reveal">Профессиональное строительство, ремонт и отделка под ключ. Гарантия качества на все работы — 5 лет.</p>
+        <div class="hero-buttons reveal">
+            <a href="#portfolio" class="btn btn-primary">Смотреть работы <i class="fas fa-arrow-right"></i></a>
+            <a href="#services" class="btn btn-outline">Наши услуги</a>
+        </div>
+        <div class="hero-stats reveal">
+            <div class="stat">
+                <h3 class="counter" data-target="1250">0</h3>
+                <p>Проектов сдано</p>
+            </div>
+            <div class="stat">
+                <h3 class="counter" data-target="15">0</h3>
+                <p>Лет опыта</p>
+            </div>
+            <div class="stat">
+                <h3 class="counter" data-target="98">0</h3>
+                <p>% довольных клиентов</p>
+            </div>
+            <div class="stat">
+                <h3 class="counter" data-target="50">0</h3>
+                <p>Мастеров в команде</p>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <span></span>
+    </div>
+</section>
+
+<!-- Услуги -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Что мы делаем</span>
+            <h2 class="section-title">Наши <span class="accent">услуги</span></h2>
+            <p class="section-desc">Полный спектр строительных и отделочных работ любой сложности</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card tilt">
+                <div class="service-icon"><i class="fas fa-home"></i></div>
+                <h3>Строительство домов</h3>
+                <p>Возведение домов под ключ из кирпича, газобетона и дерева. Проектирование и монтаж.</p>
+                <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card tilt">
+                <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+                <h3>Ремонт квартир</h3>
+                <p>Косметический и капитальный ремонт. Дизайн-проект, черновые и чистовые работы.</p>
+                <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card tilt">
+                <div class="service-icon"><i class="fas fa-ruler-combined"></i></div>
+                <h3>Отделка и дизайн</h3>
+                <p>Профессиональная отделка, укладка плитки, штукатурка, малярные работы.</p>
+                <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card tilt">
+                <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Электромонтаж</h3>
+                <p>Разводка электрики, установка розеток, освещения и щитов. Соблюдение норм безопасности.</p>
+                <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card tilt">
+                <div class="service-icon"><i class="fas fa-faucet"></i></div>
+                <h3>Сантехника</h3>
+                <p>Монтаж труб, установка сантехники, тёплые полы, систем отопления.</p>
+                <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card tilt">
+                <div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
+                <h3>Проектирование</h3>
+                <p>Архитектурные проекты, 3D-визуализация, техническая документация.</p>
+                <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Портфолио -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Наши работы</span>
+            <h2 class="section-title">Порт<span class="accent">фолио</span></h2>
+            <p class="section-desc">Более 1250 реализованных проектов по всей стране</p>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item reveal">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Проект 1">
+                <div class="portfolio-overlay">
+                    <h3>Загородный дом</h3>
+                    <p>Строительство под ключ • 320 м²</p>
+                </div>
+            </div>
+            <div class="portfolio-item reveal">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800" alt="Проект 2">
+                <div class="portfolio-overlay">
+                    <h3>Ремонт квартиры</h3>
+                    <p>Дизайнерский ремонт • 95 м²</p>
+                </div>
+            </div>
+            <div class="portfolio-item reveal">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800" alt="Проект 3">
+                <div class="portfolio-overlay">
+                    <h3>Офисное помещение</h3>
+                    <p>Коммерческая отделка • 240 м²</p>
+                </div>
+            </div>
+            <div class="portfolio-item reveal">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800" alt="Проект 4">
+                <div class="portfolio-overlay">
+                    <h3>Санузел под ключ</h3>
+                    <p>Плитка и сантехника • 12 м²</p>
+                </div>
+            </div>
+            <div class="portfolio-item reveal">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800" alt="Проект 5">
+                <div class="portfolio-overlay">
+                    <h3>Кухня-гостиная</h3>
+                    <p>Перепланировка • 45 м²</p>
+                </div>
+            </div>
+            <div class="portfolio-item reveal">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800" alt="Проект 6">
+                <div class="portfolio-overlay">
+                    <h3>Фасад здания</h3>
+                    <p>Утепление и отделка • 600 м²</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- О нас -->
+<section id="about" class="about">
+    <div class="container about-container">
+        <div class="about-image reveal">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800" alt="О нас">
+            <div class="about-badge">
+                <i class="fas fa-award"></i>
+                <span>15+ лет опыта</span>
+            </div>
+        </div>
+        <div class="about-content">
+            <span class="section-tag reveal">О компании</span>
+            <h2 class="section-title reveal">Почему выбирают <span class="accent">нас</span></h2>
+            <p class="reveal">Мы — команда профессионалов с многолетним опытом в строительстве и ремонте. Наша миссия — делать качественные и долговечные проекты, которые радуют клиентов годами.</p>
+            <ul class="about-list">
+                <li class="reveal"><i class="fas fa-check-circle"></i> Фиксированная смета и соблюдение сроков</li>
+                <li class="reveal"><i class="fas fa-check-circle"></i> Гарантия 5 лет на все виды работ</li>
+                <li class="reveal"><i class="fas fa-check-circle"></i> Собственная бригада мастеров</li>
+                <li class="reveal"><i class="fas fa-check-circle"></i> Качественные материалы от проверенных поставщиков</li>
+                <li class="reveal"><i class="fas fa-check-circle"></i> Бесплатный выезд инженера и смета</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary reveal">Обсудить проект <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container reveal">
+        <h2>Готовы начать свой проект?</h2>
+        <p>Получите бесплатную консультацию и смету в течение 24 часов</p>
+        <a href="#contact" class="btn btn-light">Получить консультацию</a>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Свяжитесь с нами</span>
+            <h2 class="section-title">Оставить <span class="accent">заявку</span></h2>
+            <p class="section-desc">Перезвоним в течение 15 минут и ответим на все вопросы</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Телефон</h4>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@stroymaster.ru</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Адрес</h4>
+                        <p>г. Москва, ул. Строителей, 15</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Часы работы</h4>
+                        <p>Пн–Сб: 9:00 – 20:00</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Телефон" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Выберите услугу</option>
+                        <option>Строительство дома</option>
+                        <option>Ремонт квартиры</option>
+                        <option>Отделка</option>
+                        <option>Электромонтаж</option>
+                        <option>Сантехника</option>
+                        <option>Проектирование</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Опишите ваш проект" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    Отправить заявку <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-col">
+            <a href="#" class="logo">
+                <i class="fas fa-hard-hat"></i>
+                <span>Строй<span class="accent">Мастер</span></span>
+            </a>
+            <p>Профессиональное строительство и ремонт под ключ с гарантией качества.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Услуги</h4>
+            <a href="#">Строительство домов</a>
+            <a href="#">Ремонт квартир</a>
+            <a href="#">Отделка</a>
+            <a href="#">Проектирование</a>
+        </div>
+        <div class="footer-col">
+            <h4>Компания</h4>
+            <a href="#about">О нас</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#contact">Контакты</a>
+            <a href="#">Отзывы</a>
+        </div>
+        <div class="footer-col">
+            <h4>Мы в соцсетях</h4>
+            <div class="socials">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 СтройМастер. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
